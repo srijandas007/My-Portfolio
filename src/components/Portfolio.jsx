@@ -101,7 +101,7 @@ export default function Portfolio() {
             <div className="mb-6 inline-block">
               <div className="w-32 h-32 rounded-full bg-gradient-to-r from-teal-500 to-blue-500 p-1 mx-auto overflow-hidden">
                 <img 
-                  src="/profile.jpg" 
+                  src={`${process.env.PUBLIC_URL}/profile.jpg`}
                   alt="Srijan Das" 
                   className="w-full h-full rounded-full object-cover"
                   onError={(e) => {
@@ -203,7 +203,7 @@ export default function Portfolio() {
               </a>
             </div>
             <a 
-              href="/resume.pdf" 
+              href={`${process.env.PUBLIC_URL}/resume.pdf`}
               download="Srijan_Das_Resume.pdf"
               className="bg-teal-600 hover:bg-teal-500 text-white px-8 py-4 rounded-lg font-medium inline-flex items-center gap-2"
               style={{
